@@ -1,0 +1,10 @@
+/* STYLE RESET */
+*{margin: 0;padding: 0;}
+/* END RESET */
+
+/* ===== BASE STYLES ===== */
+nav a {
+  text-decoration: none;
+  padding: 2em 5em 2em 5em;
+  display: block;
+}
