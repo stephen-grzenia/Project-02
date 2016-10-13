@@ -3,8 +3,144 @@
 /* END RESET */
 
 /* ===== BASE STYLES ===== */
-nav a {
-  text-decoration: none;
-  padding: 2em 5em 2em 5em;
-  display: block;
+/* minor third */
+nav {
+  text-align: center;
+  padding-bottom: 5em;
+  padding-top: 2em;
+  font-size: 1em;
+
 }
+
+nav a {
+
+  color: #00FFFF;
+  background-color: #696969;
+    border-left: thin solid white;
+    border-right: thin solid white;
+    border-top: thin solid white;
+    border-bottom: thin solid white;
+
+}
+
+html {
+
+  font-size: 1.2em; /* 21.6px @ 18px */
+  line-height: 1em; /* 18px = gridline */
+  color: rgb(194, 214, 214); /*change le color*/
+  background-color: #222;
+  padding: 0.5em;
+}
+
+h1 {
+  font-size: 2.986em; /*53.748px @ 18px*/
+  line-height: 0.67em; /*36px @ 53.748px*/
+  text-align: center;
+  text-decoration: underline;
+}
+
+
+h2 {
+  font-size: 2.488em; /*44.79px @ 18px*/
+  line-height: 0.803em; /*36px @ 44.79px*/
+  text-align: left;
+  padding: 0.8em 0.1em 0.8em 0.1em;
+  text-decoration: underline;
+}
+
+li {
+  padding-left: 0.5em;
+  padding-top: 1em;
+}
+
+p,
+ul {
+  font-size: 1em;
+  padding-bottom: 1.222em; /* 22px */
+  padding-top: 1.222em;
+  list-style-type: '-';
+}
+
+footer {
+  font-style: italic;
+  font-size: 0.833em; /* 15px @ 18px */
+}
+
+ol {
+  padding-left: 0.5em;
+  list-style-type: none;
+}
+
+
+
+/*interactions*/
+nav a:hover{
+  background-color: green;
+  color: #160A45;
+}
+
+/*decorations*/
+
+
+
+/*Largest Phone - Largest Tablet*/
+@media screen and (min-width: 31.500em) and (max-width: 64em) /* pixel sizes*/
+  {
+    nav a{
+      padding: 1em 2.5em 2.5em 1em;
+    }
+
+    html {
+      font-size: 1em;
+    }
+
+    h1 {
+      font-size: 2em;
+
+    }
+
+    h2 {
+      font-size: 1.728em;
+      line-height: 0.5em;
+    }
+
+  p,
+  ul {
+    font-size
+    padding-bottom: 1.222em; /* 22px */
+  }
+
+}
+  /*Smallest-largest Cell Phone*/
+  @media screen and (min-width: 20em) and (max-width: 31.500em) /* pixel sizes*/
+  {
+    html {
+      font-size: 0.833em;
+    }
+
+    h1 {
+      font-size: 1.728em; /*31.104px @ 18px*/
+    }
+
+    h2 {
+      font-size: 1.44em; /*25.92px @ 18px*/
+    }
+
+
+    nav a{
+      margin-left: 0.1em;
+      margin-right: 0.1em;
+      border-left: thin solid white;
+      border-right: thin solid white;
+      border-top: thin solid white;
+      border-bottom: thin solid white;
+
+    }
+
+    p,
+    ul {
+      font-size:
+      padding-bottom: 1.222em; /* 22px */
+    }
+
+  }
