@@ -1,42 +1,30 @@
-/* STYLE RESET */
-*{margin: 0;padding: 0;}
-/* END RESET */
+
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+/* stylelint-disable*/
+a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,caption,center,cite,code,dd,del,details,dfn,div,dl,dt,em,embed,fieldset,figcaption,figure,footer,form,h1,h2,h3,h4,h5,h6,header,hgroup,html,i,iframe,img,ins,kbd,label,legend,li,mark,menu,nav,object,ol,output,p,pre,q,ruby,s,samp,section,small,span,strike,strong,sub,summary,sup,table,tbody,td,tfoot,th,thead,time,tr,tt,u,ul,var,video{margin:0;padding:0;border:0;font:inherit;vertical-align:baseline}article,aside,details,figcaption,figure,footer,header,hgroup,main,menu,nav,section{display:block}html{line-height:1}body{line-height:inherit}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:after,blockquote:before,q:after,q:before{content:'';content:none}table{border-collapse:collapse;border-spacing:0}
+/* stylelint-enable */
+
+
 
 /* ===== BASE STYLES ===== */
 /* minor third */
-nav {
-  text-align: center;
-  padding-bottom: 5em;
-  padding-top: 2em;
-  font-size: 1em;
-
-}
-
-nav a {
-
-  color: #00FFFF;
-  background-color: #696969;
-    border-left: thin solid white;
-    border-right: thin solid white;
-    border-top: thin solid white;
-    border-bottom: thin solid white;
-
-}
-
 html {
 
   font-size: 1.2em; /* 21.6px @ 18px */
   line-height: 1em; /* 18px = gridline */
-  color: rgb(194, 214, 214); /*change le color*/
-  background-color: #222;
-  padding: 0.5em;
+  background-color: #CBCFDB;
 }
+
+
 
 h1 {
   font-size: 2.986em; /*53.748px @ 18px*/
   line-height: 0.67em; /*36px @ 53.748px*/
   text-align: center;
-  text-decoration: underline;
+  text-decoration: none;
 }
 
 
@@ -44,26 +32,43 @@ h2 {
   font-size: 2.488em; /*44.79px @ 18px*/
   line-height: 0.803em; /*36px @ 44.79px*/
   text-align: left;
-  padding: 0.8em 0.1em 0.8em 0.1em;
+  padding-top: 0.8em;
+  padding-left: 0.5em;
   text-decoration: underline;
 }
 
-li {
+h3 {
+  font-size: 1.488em;
+  line-height: 0.803em;
+  padding-top: 0.8em;
   padding-left: 0.5em;
+}
+
+li {
+  padding-left: 1em;
   padding-top: 1em;
 }
 
+
+
 p,
 ul {
-  font-size: 1em;
   padding-bottom: 1.222em; /* 22px */
   padding-top: 1.222em;
+  padding-left: 0.5em;
+  padding-right: 0.5em;
   list-style-type: '-';
+}
+
+p {
+  font-size: 1.5em;
+  line-height: 1em;
 }
 
 footer {
   font-style: italic;
   font-size: 0.833em; /* 15px @ 18px */
+  padding-top: 2.44444em; /*Two gridlines of padding*/
 }
 
 ol {
@@ -72,48 +77,116 @@ ol {
 }
 
 
+/*header setting*/
+header {
+  height: 100%;
+  margin-top: 10%;
+
+}
+
+.header{
+  padding: 0;
+}
+
+/*navigation bar*/
+#navi {
+  position: absolute;
+  top: 0;
+}
+
+.navi {
+  width: 100%;
+  margin: 0;
+  line-height: 1;
+}
+
+.navi li {
+  float: left;
+  width: 25%;
+  margin: 0;
+  padding: 0;
+
+}
+
+.navi li a {
+  display: block;
+  padding : 10%;
+  background-color:#101861;
+  color:#EDE3E1;
+  text-align: center;
+  text-decoration: none;
+}
+
+.navi ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+/* top 20 page*/
+.list h2 {
+  padding-bottom: 3%;
+  font-size: 2em;
+  line-height: 1.2em;
+}
+
+.list p {
+padding-right: 0.5em;
+}
+
+
+/*resume page*/
+
+.experience h3{
+  line-height: 1em;
+}
+
+
 
 /*interactions*/
-nav a:hover{
-  background-color: green;
+.navi a:hover{
+  background-color: blue;
   color: #160A45;
 }
 
 /*decorations*/
 
+.list p{
+  background-color: #778883;
+}
 
 
 /*Largest Phone - Largest Tablet*/
-@media screen and (min-width: 31.500em) and (max-width: 64em) /* pixel sizes*/
+@media screen and (min-width: 31.500em) /* pixel sizes*/
   {
-    nav a{
-      padding: 1em 2.5em 2.5em 1em;
-    }
 
-    html {
-      font-size: 1em;
-    }
-
-    h1 {
-      font-size: 2em;
-
-    }
-
-    h2 {
-      font-size: 1.728em;
-      line-height: 0.5em;
-    }
-
-  p,
-  ul {
-    font-size
-    padding-bottom: 1.222em; /* 22px */
+  .navi a{
+    padding: 1em 2.5em 2.5em 1em;
   }
 
+  html {
+    font-size: 1em;
+  }
+
+  h1 {
+    font-size: 2em;
+
+  }
+
+  h2 {
+    font-size: 1.728em;
+    line-height: 0.5em;
+  }
+
+p,
+ul {
+  font-size
+  padding-bottom: 1.222em; /* 22px */
+}
 }
   /*Smallest-largest Cell Phone*/
-  @media screen and (min-width: 20em) and (max-width: 31.500em) /* pixel sizes*/
+  @media screen and (min-width: 20em)/* pixel sizes*/
   {
+
     html {
       font-size: 0.833em;
     }
@@ -127,20 +200,24 @@ nav a:hover{
     }
 
 
-    nav a{
-      margin-left: 0.1em;
-      margin-right: 0.1em;
-      border-left: thin solid white;
-      border-right: thin solid white;
-      border-top: thin solid white;
-      border-bottom: thin solid white;
+    .navi a{
+      border-left: thin solid black;
+      border-right: thin solid black;
+      border-top: thin solid black;
+      border-bottom: thin solid black;
 
+    }
+
+    .navi ul{
+      font-size: 1em;
     }
 
     p,
     ul {
-      font-size:
+      font-size: 1.22em;
       padding-bottom: 1.222em; /* 22px */
     }
+
+
 
   }
