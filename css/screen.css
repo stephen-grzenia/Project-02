@@ -18,36 +18,10 @@ html {
   background-color: #CBCFDB;
 }
 
-
-
-h1 {
-  font-size: 2.986em; /*53.748px @ 18px*/
-  line-height: 0.67em; /*36px @ 53.748px*/
-  text-align: center;
-  text-decoration: none;
-}
-
-
-h2 {
-  font-size: 2.488em; /*44.79px @ 18px*/
-  line-height: 0.803em; /*36px @ 44.79px*/
-  padding-top: 0.8em;
-  padding-left: 0.5em;
-}
-
-h3 {
-  font-size: 0.5em;
-  line-height: 0.803em;
-  padding-top: 0.8em;
-  padding-left: 0.5em;
-}
-
 li {
   padding-left: 1em;
   padding-top: 1em;
 }
-
-
 
 p,
 ul {
@@ -66,7 +40,7 @@ p {
 footer {
   font-style: italic;
   font-size: 0.833em; /* 15px @ 18px */
-  padding-top: 2.44444em; /*Two gridlines of padding*/
+  padding-top: 55%; /*Two gridlines of padding*/
 }
 
 ol {
@@ -79,16 +53,15 @@ ol {
 header {
   height: 100%;
   margin-top: 10%;
-
 }
 
 .header{
   padding: 0;
 }
 
-/*navigation bar*/
+/*            navigation bar          */
 #navi {
-  position: absolute;
+  position: fixed;
   top: 0;
 }
 
@@ -121,6 +94,7 @@ header {
 }
 
 /* top 20 page*/
+
 .list h2 {
   padding-bottom: 3%;
   font-size: 2em;
@@ -131,6 +105,11 @@ header {
 padding-right: 0.5em;
 }
 
+.top20 h1 {
+  font-size: 3em;
+  text-decoration: underline;
+  text-align: center;
+}
 
 /*resume page*/
 
@@ -151,15 +130,31 @@ padding-right: 0.5em;
   font-size: 1em;
 }
 
+/*about me page*/
+
+.me h1 {
+  font-size: 3em;
+  text-decoration: underline;
+  text-align: center;
+}
+
+.me h2 {
+  font-style: italic;
+  font-size: 2em;
+}
 
 
-/*interactions*/
+
+
+
+
+/*             interactions                       */
 .navi a:hover{
   background-color: blue;
   color: #160A45;
 }
 
-/*decorations*/
+/*                  decorations                     */
 
 .list p{
   background-color: #778883;
