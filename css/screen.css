@@ -32,6 +32,12 @@ p {
   line-height: 1em;
 }
 
+li {
+  line-height: 1em;
+}
+
+
+
 footer {
   font-style: italic;
   font-size: 0.833em; /* 15px @ 18px */
@@ -96,6 +102,15 @@ header {
   list-style-type: none;
   padding: 0;
 }
+
+/* welcome page */
+
+.welcome h1{
+  text-align: center;
+}
+
+
+
 
 /* top 20 page*/
 
