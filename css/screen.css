@@ -11,16 +11,11 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
 
 /* ===== BASE STYLES ===== */
 /* minor third */
-html {
+body {
 
   font-size: 1.2em; /* 21.6px @ 18px */
   line-height: 1em; /* 18px = gridline */
   background-color: #CBCFDB;
-}
-
-li {
-  padding-left: 1em;
-  padding-top: 1em;
 }
 
 p,
@@ -43,11 +38,12 @@ footer {
   padding-top: 55%; /*Two gridlines of padding*/
 }
 
+/*
 ol {
   padding-left: 0.5em;
   list-style-type: none;
 }
-
+*/
 
 /*header setting*/
 header {
@@ -71,6 +67,14 @@ header {
   line-height: 1;
 }
 
+.navi a
+{
+  border-left: thin solid black;
+  border-right: thin solid black;
+  border-top: thin solid black;
+  border-bottom: thin solid black;
+}
+
 .navi li {
   float: left;
   width: 25%;
@@ -81,7 +85,7 @@ header {
 
 .navi li a {
   display: block;
-  padding : 10%;
+  padding : 5%;
   background-color:#101861;
   color:#EDE3E1;
   text-align: center;
@@ -97,8 +101,10 @@ header {
 
 .list h2 {
   padding-bottom: 3%;
+  padding-top: 3%;
+  margin-bottom: 1%;
   font-size: 2em;
-  line-height: 1.2em;
+  line-height: 5%;
 }
 
 .list p {
@@ -117,9 +123,21 @@ padding-right: 0.5em;
   font-style: italic;
 }
 
+.info h1 {
+  text-align: center;
+  font-size: 2em;
+}
+
+.info li {
+  text-align: center;
+  line-height: 100%;
+  list-style-type: none;
+}
+
 .experience h3{
   line-height: 1em;
   font-size: 1em;
+  padding-top: 0.5em;
 }
 
 .experience h4 {
@@ -141,9 +159,13 @@ padding-right: 0.5em;
 .me h2 {
   font-style: italic;
   font-size: 2em;
+  margin-top: 5%;
 }
 
-
+.gaming li{
+  padding-left: 0.5em;
+  line-height: 5%;
+}
 
 
 
@@ -156,18 +178,14 @@ padding-right: 0.5em;
 
 /*                  decorations                     */
 
-.list p{
-  background-color: #778883;
+.list h2{
+  background-color:  #778883;
 }
 
 
 /*Largest Phone - Largest Tablet*/
 @media screen and (min-width: 31.500em) /* pixel sizes*/
   {
-
-  .navi a{
-    padding: 1em 2.5em 2.5em 1em;
-  }
 
   html {
     font-size: 1em;
@@ -203,19 +221,6 @@ ul {
 
     h2 {
       font-size: 1.44em; /*25.92px @ 18px*/
-    }
-
-
-    .navi a{
-      border-left: thin solid black;
-      border-right: thin solid black;
-      border-top: thin solid black;
-      border-bottom: thin solid black;
-
-    }
-
-    .navi ul{
-      font-size: 1em;
     }
 
     p,
